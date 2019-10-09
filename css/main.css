@@ -40,7 +40,8 @@ a:link, a:visited, a:active{
 }
 
 .nav-container{ 
-    width: 98%;
+    background-color: black;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center; 
@@ -89,7 +90,7 @@ font-style: normal;
 
 }
 h1{
-text-align: center;
+text-align: left;
 margin-top: 20px;
 }
 
@@ -215,7 +216,7 @@ background-color:#FFFFFF;
 /*words*/
 .titulo{
     margin-bottom: 30px;
-    text-align: center;
+    text-align: left;
 }
 .container-words{
     width: 98%;
@@ -419,7 +420,6 @@ justify-content: flex-start;
 }
 #text-bg{
     margin-top: 10px;
-
 }
 .header-text{
     height: 550px;
