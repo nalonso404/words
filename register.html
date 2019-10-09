@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <title>NADIE SABE NADA</title>
+        <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap" rel="stylesheet"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <nav>
+    <div class="nav-container">
+        <h3 class="brand">NSN</h3>
+        <ul class="nav-menu">
+            <li class="nav-link"> <a href="index.html">HOME</a></li>
+            <li class="nav-link"><a href="words.html">WORDS</a></li>
+            <li class="nav-link"><a href="register.html"><em>REGISTER</em></a></li>
+            <li class="nav-link"><a href="login.html">LOG IN</a></li>
+        </ul>    
+    </div>
+    </nav>
+    <main class="container-words">
+        <section class="signup">
+          <h3><em>ASISTE COMO PÚBLICO</em></h3>
+          <div class="form-wrapper">
+            <form class="signup-form" action="">
+              <input type="text" id="name" placeholder="Name" />
+              <input type="text" id="surname" placeholder="Surname" />
+              <input type="text" id="dob" placeholder="Date of birth" />
+              <!--hacemos el input email type text para que no moleste la validación-->
+              <input type="text" id="email" placeholder="Email" />
+              <input type="text" id="city" placeholder="City" />
+              <input type="text" id="phone" placeholder="Phone Number" />
+              <input type="password" id="password" placeholder="******" />
+              <input type="password" id="repeat-password" placeholder="******" />
+              <button type="submit" class="button" id="signup-button" disabled
+                onclick="signup.saveData(event)">Signup</button>
+            </form>
+            <div class="errors-container">
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <script src="script/User.js"></script>
+      <script src="script/Validator.js"></script>
+      <script src="script/Singup.js"></script>
+    
+    
+</body>
+</html>
