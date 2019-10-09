@@ -4,13 +4,11 @@ const connectToApi = async () => {
   const section = document.querySelector('.random-word');
     
   const response= await fetch('https://api.adviceslip.com/advice')
-     const wordArray= await response.json();
-     console.log(wordArray);
-     const words=wordArray.slip.advice.split(" ");
+     const wordResult= await response.json();
+     const words=wordResult.slip.advice.split(" ");
      const number= Math.floor(words.length*Math.random());
-     const word= words[number].toUpperCase();
+     const word= words[number].toUpperCase().replace(/[ ,.]/g, "");
      const oneWord= word.split(/[ ,.]+/);
-    console.log(word);
      const article = document.createElement('article')
         article.innerHTML = `
           <h3>${oneWord}</h3>
@@ -23,12 +21,17 @@ const connectToApi = async () => {
    
 
      const connectToApiAnswer1 = async() =>{
-       const btn = document.querySelector('.random-btn-1');
-       const response= await fetch('https://api.adviceslip.com/advice')
-     const wordArray= await response.json();
-     const words=wordArray.slip.advice.split(" ");
-     const number= Math.floor(words.length*Math.random());
-     const word1= words[number];
+      const btn = document.querySelector('.random-btn-1');
+      const response= await fetch('https://api.adviceslip.com/advice')
+     const wordResult= await response.json();
+     
+     const words=wordResult.slip.advice.split(" ");
+     
+
+     const wordsArr= words.map(word => word.replace(/[ ,.]/g, ""));
+     
+     const number= Math.floor(wordsArr.length*Math.random());
+     const word1= wordsArr[number];
      btn.innerHTML=`${word1}`
      }
 
@@ -37,10 +40,13 @@ const connectToApi = async () => {
      const connectToApiAnswer2 = async() =>{
       const btn = document.querySelector('.random-btn-2');
       const response= await fetch('https://api.adviceslip.com/advice')
-    const wordArray= await response.json();
-    const words=wordArray.slip.advice.split(" ");
-    const number= Math.floor(words.length*Math.random());
-    const word2= words[number];
+    const wordResult= await response.json();
+
+    const words=wordResult.slip.advice.split(" ");
+
+    const wordsArr= words.map(word => word.replace(/[ ,.]/g, ""));
+    const number= Math.floor(wordsArr.length*Math.random());
+    const word2= wordsArr[number];
     btn.innerHTML=`${word2}`
     }
 
@@ -49,10 +55,13 @@ const connectToApi = async () => {
     const connectToApiAnswer3 = async() =>{
       const btn = document.querySelector('.random-btn-3');
       const response= await fetch('https://api.adviceslip.com/advice')
-    const wordArray= await response.json();
-    const words=wordArray.slip.advice.split(" ");
-    const number= Math.floor(words.length*Math.random());
-    const word3= words[number];
+    const wordResult= await response.json();
+
+    const words=wordResult.slip.advice.split(" ");
+
+    const wordsArr= words.map(word => word.replace(/[ ,.]/g, ""));
+    const number= Math.floor(wordsArr.length*Math.random());
+    const word3= wordsArr[number];
     btn.innerHTML=`${word3}`
     }
 

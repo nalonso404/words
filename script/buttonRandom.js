@@ -51,17 +51,21 @@ eventListener();
 let deleteButton= document.querySelector('.delete-btn');
 
 function emptyContain(){
-  location.reload();
   console.log(`empty contain`)
-    document.querySelector('.random-word').innerHTML="";
-    document.querySelector('.random-result').innerHTML="";
-    document.querySelector('.random-btn-1').innerHTML = "";
-    document.querySelector('.random-btn-2').innerHTML = "";
-    document.querySelector('.random-btn-3').innerHTML = "";
+  document.querySelector('.random-word').innerHTML="";
+  document.querySelector('.random-result').innerHTML="";
+  document.querySelector('.random-btn-1').innerHTML = "";
+  document.querySelector('.random-btn-2').innerHTML = "";
+  document.querySelector('.random-btn-3').innerHTML = "";
+
+  connectToApiAnswer1();
+  connectToApiAnswer2();
+  connectToApiAnswer3();
+
+  connectToApi()
+
 }
 function tryAgain(){
     deleteButton.addEventListener("click", emptyContain);
-          
-
 }
 tryAgain();
