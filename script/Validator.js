@@ -24,14 +24,7 @@ class Validator {
     }
     return this.errors;
   }
-  validateValidPhone = (phone) =>{
-    if("^[789]{1}[0-9]{9}$".test(phone)){
-      delete this.errors.invalidPhone;
-    } else{
-      this.errors.invalidPhone = this.invalidPhone;
-    }
-    return this.errors;
-  }
+
   validateUniqueEmail = (newEmail) => {
     //recoger datos de localStorage
     const userDB = JSON.parse(localStorage.getItem('users'));
