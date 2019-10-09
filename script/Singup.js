@@ -74,6 +74,11 @@ class Signup {
       this.handleErrorMessages();
       this.handleIsValid();
     })
+    this.phoneInput.addEventListener('input', event =>{
+      const errors= validator.validateValidPhone(event.target.value);
+      this.handleErrorMessages();
+      this.handleIsValid();
+    })
   }
 
   handleErrorMessages = () => {

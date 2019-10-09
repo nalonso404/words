@@ -6,11 +6,13 @@ class Validator {
     this.repeatEmailError = 'Ese email ya está en uso';
     this.passwordError = 'Introduce una contraseña de al menos 6 caracteres';
     this.repeatPassError = 'Los campos no coinciden';
+    this.invalidPhone ='Introduce un número de teléfono válido';
 
     this.errors = {
       invalidEmailError: this.invalidEmailError,
       passwordError: this.passwordError,
-      repeatPassError: this.repeatPassError
+      repeatPassError: this.repeatPassError,
+      invalidPhone:this.invalidPhone
     }
   }
 
@@ -22,7 +24,14 @@ class Validator {
     }
     return this.errors;
   }
-
+  validateValidPhone = (phone) =>{
+    if("^[789]{1}[0-9]{9}$".test(phone)){
+      delete this.errors.invalidPhone;
+    } else{
+      this.errors.invalidPhone = this.invalidPhone;
+    }
+    return this.errors;
+  }
   validateUniqueEmail = (newEmail) => {
     //recoger datos de localStorage
     const userDB = JSON.parse(localStorage.getItem('users'));

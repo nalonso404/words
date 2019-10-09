@@ -28,7 +28,7 @@ const connectToApi = async () => {
      const words=wordResult.slip.advice.split(" ");
      
 
-     const wordsArr= words.map(word => word.replace(/[ ,.]/g, ""));
+     const wordsArr= words.map(word => word.replace(/[ ,.]/g, "").toLowerCase());
      
      const number= Math.floor(wordsArr.length*Math.random());
      const word1= wordsArr[number];
@@ -44,7 +44,7 @@ const connectToApi = async () => {
 
     const words=wordResult.slip.advice.split(" ");
 
-    const wordsArr= words.map(word => word.replace(/[ ,.]/g, ""));
+    const wordsArr= words.map(word => word.replace(/[ ,.]/g, "").toLowerCase());
     const number= Math.floor(wordsArr.length*Math.random());
     const word2= wordsArr[number];
     btn.innerHTML=`${word2}`
@@ -59,7 +59,7 @@ const connectToApi = async () => {
 
     const words=wordResult.slip.advice.split(" ");
 
-    const wordsArr= words.map(word => word.replace(/[ ,.]/g, ""));
+    const wordsArr= words.map(word => word.replace(/[ ,.]/g, "").toLowerCase());
     const number= Math.floor(wordsArr.length*Math.random());
     const word3= wordsArr[number];
     btn.innerHTML=`${word3}`

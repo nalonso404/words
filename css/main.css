@@ -4,6 +4,21 @@
     padding: o;
 
 }
+html{ height:100%; }
+body{ min-height:100%; padding:0; margin:0; position:relative; }
+
+body::after{ content:''; display:block; height:100px; }
+
+footer{ 
+    background-color: rgba(0,228,201,0.2);
+
+    position:absolute; 
+    bottom:0; 
+    width:100%; 
+    height:60px; 
+  }
+
+  
 html, body {
     max-width: 100%;
     overflow-x: hidden;
@@ -144,7 +159,10 @@ h4{
     text-align: left;
     margin: 20px 10px;
 }
-
+.container-login{
+    width: 98%;
+    margin: 0 auto;
+}
 .form-wrapper > form{
     display: flex;
     flex-direction: column;
@@ -176,17 +194,17 @@ color:#000000;
 background-color:#FFFFFF;
 }
 
-.errors-container{
-    width: 90%;
-}
 
 
 .errors-container p{
-    background-color: black;
-    padding: 20px;
-    margin: 10px 0;
-    color: white;
-    border-radius: 5px;
+    background: rgba(0,228,201,.4);
+    color: black;
+    font-weight: 400;
+    padding: 15px 20px;
+    cursor: pointer;
+    margin: 10px 0px;
+    transition: 0.2s ease;
+    font-size: 14px;
 }
 
 .errors-container p.correct-message {
@@ -296,7 +314,6 @@ margin: 0 auto;
 }
 
 .footer-container{
-    background-color: rgb(0,228,201);
     padding: 10px;
     font-size: 10px;
     text-align: center;
@@ -310,6 +327,8 @@ margin: 0 auto;
     justify-content: center;
     margin: 20px 10px 10px 10px;
     text-align: left;
+    padding-top: 10px;
+    border-top: 1px solid black;
 }
 .container-faqs{
     display: flex;
@@ -378,18 +397,21 @@ margin: 0 auto;
    }
 
    nav{
-    margin: 50px 0px;
+    margin: 50px auto;
+
+    width: 92%;
+    
 
 
    }
 .nav-container{
 display: flex;
 flex-direction: row;
-justify-content: space-around;
+justify-content: flex-start;
 
 }
 .nav-link{
-    padding: 15px;}
+    padding: 0px 20px;}
 .brand{
     margin: 0px;
 }
@@ -451,7 +473,10 @@ align-content: center;
         margin-top: 80px;
         text-align: center;
     }
-
+    .errors-container{
+        width: 60%;
+        margin: 0px auto;
+    }
     .login > h3{
         font-size: 40px;
         margin-top: 80px;
@@ -474,10 +499,20 @@ align-content: center;
         margin-bottom: 20px;
     }
 
+    .random-btn-1{
+        margin: 0px 5px 0px 0px;
+    }
+    .random-btn-2{
+        margin: 0 5px;
+    }
+    .random-btn-3{
+        margin: 0px 0px 0px 5px;
+    }
     .random-btn-1,.random-btn-2, .random-btn-3{
         width: 33%;
         font-size: 20px;
     }
+
     .diccionario{
         width: 94%;
         margin: 20px auto;
