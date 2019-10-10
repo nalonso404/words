@@ -83,15 +83,17 @@ font-style: normal;
 .header-text{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-end;
     text-align: center;
     margin: 0px;
     height: 500px;
 
+
 }
 h1{
-text-align: left;
-margin-top: 20px;
+text-align: center;
+color: white;
+margin-bottom: 30px;
 }
 
 .title{
@@ -398,7 +400,7 @@ margin: 0 auto;
 
    nav{
     margin: 50px auto;
-    width: 85%;
+    width: 90%;
     
 
    }
@@ -424,7 +426,8 @@ justify-content: flex-start;
 .header-text{
     height: 550px;
 }
-  
+
+
 .title{
     font-size: 18px;
     color: white;
@@ -437,6 +440,8 @@ justify-content: flex-start;
     h4{
         text-align: center;
     }
+
+   
 
     .solo-mejores{
         display: flex;
@@ -470,6 +475,11 @@ align-content: center;
         margin: 12px 0px;
     }
 
+    .titulo{  font-size: 40px;
+        margin-top: 30px;
+        text-align: center;
+
+    }
     .signup > h3{
         font-size: 40px;
         margin-top: 80px;

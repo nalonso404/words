@@ -12,13 +12,14 @@ ul {
 .container ul.menu {
   height: 50px;
   width: 50px;
+  margin-top: 20px;
 }
 .container ul.menu li {
   position: relative;
   background: aqua;
-  margin: 10px ;
+  margin: 10px 0px 10px 20px;
   height: 4px;
-  width: 50px;
+  width: 40px;
   transition: transform .3s, width .3s;
 }
 .container .active_menu li:nth-child(1) {
@@ -58,7 +59,30 @@ ul {
   transition: color .5s, margin-left .5s;
 }
 .container .active_links {
-  width: 370px !important;
+  width: 438px !important;
   margin-left: 35px !important;
+  margin-top: 30px;
   transition: width .4s, margin-left .4s;
 }
+
+
+.links{
+  display: flex;
+  direction: row;
+}
+.link-column{
+  flex-direction: column;
+  margin: 10px 4px;
+}
+
+@media (min-device-width : 768px) and (max-device-width : 1440px) {
+
+  .container ul.links li{
+display: inline;  }
+.container ul.links li a{
+  font-size: 25px;
+}
+.container .active_links {
+  width: 900px; }
+}
+

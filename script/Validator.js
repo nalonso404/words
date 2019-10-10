@@ -24,6 +24,16 @@ class Validator {
     }
     return this.errors;
   }
+//AFEGIT VALIDACIÓ NUMBER PHONE
+  validatePhone=(phone) =>{
+  
+    if(/^[679]{1}[0-9]{8}$/.test(phone)){
+      delete this.errors.invalidPhone;
+    } else{
+      this.errors.invalidPhone= this.invalidPhone;
+    }
+    return this.errors
+  }
 
   validateUniqueEmail = (newEmail) => {
     //recoger datos de localStorage

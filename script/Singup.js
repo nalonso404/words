@@ -74,6 +74,12 @@ class Signup {
       this.handleErrorMessages();
       this.handleIsValid();
     })
+//afegit per phone number
+    this.phoneInput.addEventListener('input',event =>{
+      const errors = validator.validatePhone(event.target.value);
+      this.handleErrorMessages();
+      this.handleIsValid();
+    })
   
   }
 
