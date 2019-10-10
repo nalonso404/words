@@ -3,6 +3,7 @@
 
 
 function buttonRandom(){
+  emptyResult();
       const section = document.querySelector('.random-result');
           let resultado = Math.random();
           if(resultado>0.7){
@@ -25,11 +26,7 @@ function buttonRandom(){
             section.appendChild(article)
           }
 
-
-          connectToApiAnswer1();
-          connectToApiAnswer2();
-          connectToApiAnswer3();
-          connectToApi()
+          emptyContain()
 
 
 }
@@ -51,12 +48,17 @@ eventListener();
 
 //boton try again
 
+function emptyResult(){
+  document.querySelector('.random-result').innerHTML="";
+
+}
+
 let deleteButton= document.querySelector('.delete-btn');
 
 function emptyContain(){
+
   console.log(`empty contain`)
   document.querySelector('.random-word').innerHTML="";
-  document.querySelector('.random-result').innerHTML="";
   document.querySelector('.random-btn-1').innerHTML = "";
   document.querySelector('.random-btn-2').innerHTML = "";
   document.querySelector('.random-btn-3').innerHTML = "";
@@ -64,10 +66,13 @@ function emptyContain(){
   connectToApiAnswer1();
   connectToApiAnswer2();
   connectToApiAnswer3();
-
   connectToApi()
-
+  
 }
+
+
+
+
 function tryAgain(){
     deleteButton.addEventListener("click", emptyContain);
 }

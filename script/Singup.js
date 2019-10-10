@@ -27,7 +27,7 @@ class Signup {
     const password = this.passwordInput.value;
 
     //crear una instancia de User
-    const newUser = new User(name, surname, dob, city, phone, email, password);
+    const newUser = new User(name,surname,dob,email,city,phone,password);
     //console.log(newUser)
 
     //almacenar datos en local storage

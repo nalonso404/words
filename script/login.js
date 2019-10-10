@@ -17,12 +17,10 @@ const handleMessages = user => {
 const login = (event) => {
   event.preventDefault(); 
   const usersDB = JSON.parse(localStorage.getItem('users'));
-
-  
   const emailInput = document.querySelector('#email');
   const passwordInput = document.querySelector('#password');
   
-
   const user = usersDB.find(element => element.email === emailInput.value && element.password === passwordInput.value);
+  console.log(user);
   handleMessages(user); 
 }
