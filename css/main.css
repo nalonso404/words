@@ -216,7 +216,14 @@ background-color:#FFFFFF;
 }
 
 .errors-container p.correct-message {
-    background-color: rgb(47, 164, 93);
+    background: yellow;
+    color: black;
+    font-weight: 400;
+    padding: 15px 20px;
+    cursor: pointer;
+    margin: 10px 0px;
+    transition: 0.2s ease;
+    font-size: 14px;
 
 }
 
