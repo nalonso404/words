@@ -249,7 +249,12 @@ background-color:#FFFFFF;
     margin: 20px 10px;
     text-align: left;
 }
-
+.respuesta{
+    background-color: yellow;
+    padding: 20px;
+    margin: 0 auto;
+    text-align: center;
+}
 .fondo{
     border-top: 1px solid black;
     border-bottom: 1px solid black;
@@ -435,7 +440,10 @@ flex-direction: row;
 justify-content: flex-start;
 
 }
+.respuesta{
+    width: 50%;
 
+}
 .container-words{
     width: 90%;
     margin: 0 auto;
