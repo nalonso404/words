@@ -8,31 +8,34 @@ function buttonRandom(){
           if(resultado>0.7){
             const article = document.createElement('article')
             article.innerHTML = `
-              <h3>Perfect! te nombramos caballero Words</h3>
+              <h3 class="respuesta">Perfect! te nombramos caballero Words</h3>
             `
             section.appendChild(article)
           } else if(resultado > 0.5 && resultado < 0.7){
             const article = document.createElement('article')
             article.innerHTML = `
-              <h3>Hay nivel pero aún se puede mejorar</h3>
+              <h3 class="respuesta">Hay nivel pero aún se puede mejorar</h3>
             `
             section.appendChild(article)
            }else{
             const article = document.createElement('article')
             article.innerHTML = `
-              <h3>Dedícate al parchís</h3>
+              <h3 class="respuesta">Dedícate al parchís</h3>
             `
             section.appendChild(article)
           }
+
+
           connectToApiAnswer1();
           connectToApiAnswer2();
           connectToApiAnswer3();
-
           connectToApi()
+
+
 }
 
 
-//console.log(buttons);
+//botones respuesta
 function eventListener(){ 
     let btn1 = document.querySelector('.random-btn-1');
     btn1.addEventListener("click", buttonRandom);
@@ -46,7 +49,7 @@ function eventListener(){
 
 eventListener();
 
-
+//boton try again
 
 let deleteButton= document.querySelector('.delete-btn');
 

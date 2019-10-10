@@ -13,7 +13,8 @@ const connectToApi = async () => {
         article.innerHTML = `
           <h3>${oneWord}</h3>
         `
-        section.appendChild(article) 
+        section.appendChild(article);
+
      }
 
 

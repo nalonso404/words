@@ -4,7 +4,7 @@ class Validator {
   constructor() {
     this.invalidEmailError = 'Introduce un email válido';
     this.repeatEmailError = 'Ese email ya está en uso';
-    this.passwordError = 'Introduce una contraseña de al menos 6 caracteres';
+    this.passwordError = 'Introduce una contraseña de al menos 6 carácteres';
     this.repeatPassError = 'Los campos no coinciden';
     this.invalidPhone ='Introduce un número de teléfono válido';
 

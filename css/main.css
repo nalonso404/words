@@ -72,7 +72,12 @@ font-style: normal;
 }
 
 
-
+.foto-word{
+    background: url('../img/words.png')no-repeat center center ;
+    background-size: cover;
+    height: 250px;
+    margin: 0px;
+}
 .header-bg{
     background: url('../img/bg-home.png')no-repeat center center ;
     background-size: cover;
@@ -216,6 +221,11 @@ background-color:#FFFFFF;
 }
 
 /*words*/
+.juega{
+    text-align: left;
+    margin: 20px 2px;
+}
+
 .titulo{
     margin-bottom: 30px;
     text-align: left;
@@ -394,16 +404,24 @@ margin: 0 auto;
   
 @media (min-device-width : 768px) and (max-device-width : 1440px) {
 
-   body{
-    font-size: 26px;
-   }
-
+    html, body {
+     
+     font-size: 14px;
+       padding: 0px 20px 0px 20px;
+    }
+  .reduce{
+      font-size: 12px;
+  }
+    
    nav{
     margin: 50px auto;
-    width: 90%;
+    width: 90%;}
     
-
-   }
+.foto-word{
+    width: 94%;
+    margin: 0 auto;
+}
+   
 .nav-container{
 display: flex;
 flex-direction: row;
@@ -422,6 +440,7 @@ justify-content: flex-start;
 }
 #text-bg{
     margin-top: 10px;
+    margin-bottom: 200px;
 }
 .header-text{
     height: 550px;
@@ -481,17 +500,22 @@ align-content: center;
 
     }
     .signup > h3{
-        font-size: 40px;
-        margin-top: 80px;
+        font-size: 25px;
+        margin-top: 40px;
         text-align: center;
     }
     .errors-container{
         width: 60%;
         margin: 0px auto;
     }
+    .juega{
+        font-size: 25px;
+        margin-top: 40px;
+        text-align: center;
+    }
     .login > h3{
-        font-size: 40px;
-        margin-top: 80px;
+        font-size: 25px;
+        margin-top: 40px;
         text-align: center;
     }
 
@@ -530,4 +554,3 @@ align-content: center;
         margin: 20px auto;
     }
 }
-
