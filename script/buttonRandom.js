@@ -49,9 +49,10 @@ eventListener();
 //boton try again
 
 function emptyResult(){
-  document.querySelector('.random-result').innerHTML="";
+  document.querySelector('.random-result').innerHTML=" ";
 
 }
+
 
 let deleteButton= document.querySelector('.delete-btn');
 
@@ -62,11 +63,12 @@ function emptyContain(){
   document.querySelector('.random-btn-1').innerHTML = "";
   document.querySelector('.random-btn-2').innerHTML = "";
   document.querySelector('.random-btn-3').innerHTML = "";
-
   connectToApiAnswer1();
   connectToApiAnswer2();
   connectToApiAnswer3();
   connectToApi()
+
+
   
 }
 
@@ -74,6 +76,7 @@ function emptyContain(){
 
 
 function tryAgain(){
+ 
     deleteButton.addEventListener("click", emptyContain);
 }
-tryAgain();
+tryAgain(); 

@@ -85,6 +85,13 @@ font-style: normal;
     margin: 0px;
 }
 
+.foto-reg{
+    background: url('../img/nsn.png')no-repeat center center ;
+    background-size: cover;
+    height: 250px;
+    margin: 0px;
+}
+
 .header-text{
     display: flex;
     flex-direction: column;
@@ -203,6 +210,9 @@ background-color:#FFFFFF;
 }
 
 
+.button:disabled{
+    background-color:rgba(0,0,0,0.8);
+}
 
 .errors-container p{
     background: rgba(0,228,201,.4);

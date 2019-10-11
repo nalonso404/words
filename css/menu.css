@@ -60,7 +60,7 @@ ul {
 }
 .container .active_links {
   width: 480px !important;
-  margin-left: 35px !important;
+  margin-left: 20px !important;
   margin-top: 30px;
   transition: width .4s, margin-left .4s;
 }
@@ -84,6 +84,6 @@ display: inline;  }
 }
 .container .active_links {
   width: 900px; }
-  .link-column{ flex-direction: row:}
+  .link-column{ flex-direction: row;}
 }
 
