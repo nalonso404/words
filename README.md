@@ -76,11 +76,9 @@ Crear función para el LogIn
 
 
 ### Git
-URls for the project repo and deploy
-[Link Repo](http://github.com)
-[Link Deploy](http://github.com)
+[Link Deploy](https://nalonso404.github.io/words/index.html)
 
 
 ### Slides
 URls for the project presentation (slides)
-[Link Slides.com](http://slides.com)
+[Link Slides.com] (https://docs.google.com/presentation/d/1Xrpt4X_KkGPL-MP9yv2X2AqiYBgvPRWu6Z0w-fC3tSo/edit?usp=sharing)
